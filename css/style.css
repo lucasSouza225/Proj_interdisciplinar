@@ -1,0 +1,296 @@
+:root {
+  --cor01: #191919;
+  --cor02: #2B2B2B;
+  --cor03: #FFFFFF;
+  --cor04: #CC4F3D;
+  --cor05: #cc503dc1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--cor01);
+  color: var(--cor03);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 300px;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: var(--cor03);
+  background-color: var(--cor02);
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 30px;
+  border-radius: 50px;
+}
+
+nav a:hover {
+  background-color: var(--cor04);
+  color: var(--cor01);
+}
+
+.btn_login {
+  display: flex;
+  align-items: center;
+}
+
+.btn_login input {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 50px;
+  border: 2px solid var(--cor04);
+  background-color: var(--cor02);
+}
+
+.login_btn {
+  background: var(--cor04);
+  margin-left: 10px;
+  border: none;
+  padding: 5px 20px;
+  color: var(--cor03);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.login_btn:hover {
+  font-weight: bold;
+}
+
+#menuBtn {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#menuBtn:hover {
+    font-weight: bold;
+}
+
+.banner_rotativo {
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+  margin-top: 10px;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide.active {
+  display: block;
+}
+
+.mais-vistos {
+  width: 80vw;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.mais-vistos img {
+  width: 200px;
+
+}
+
+.filmes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.filme {
+  width: 200px;
+  margin: 10px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.filme:hover {
+  transform: scale(1.05);
+}
+
+.filme img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.filme button {
+  margin-top: 10px;
+  background: var(--cor04);
+  border: none;
+  width: 100%;
+  padding: 8px;
+  color: var(--cor03);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid var(--cor04);
+  width: 90%;
+  margin: 30px auto;
+  border-radius: 50px;
+  box-shadow: 1px 1px 1px 2px var(--cor05);
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+footer li {
+  margin: 10px 0;
+}
+
+footer a {
+  color: var(--cor03);
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a svg {
+  color: var(--cor04);
+  margin: 0 20px;
+  font-size: 50px;
+}
+
+#mudarPagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor04);
+}
+
+#mudarPagina p a {
+  text-decoration: none;
+  color: var(--cor04);
+  margin: 0 5px;
+}
+
+#mudarPagina p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1060px) {
+  .logo img {
+    width: 350px;
+    margin: 30px 0;
+  }
+
+  .btn_login {
+    margin: 20px 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+.logo {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+  .logo img {
+    width: 175px;
+  }
+
+  .btn_login input {
+    width: 80%;
+  }
+
+  nav {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    background: var(--cor02);
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    width: 200px;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  #menuBtn {
+    display: block;
+  }
+
+  .search-login {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .banner_rotativo {
+    height: 200px;
+  }
+
+
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer ul {
+    margin: 30px 0;
+  }
+}

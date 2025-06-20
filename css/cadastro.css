@@ -1,0 +1,152 @@
+:root {
+    --cor01: #191919;
+    --cor02: #2B2B2B;
+    --cor03: #FFFFFF;
+    --cor04: #CC4F3D;
+    --cor06: #ffffff9d;
+}
+
+section {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 100px auto;
+}
+
+section h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+
+section p {
+    margin-bottom: 20px;
+}
+
+
+
+#frm_login {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+#frm_login div {
+    margin: 15px 0;
+}
+
+#frm_login p span {
+    color: var(--cor04);
+}
+
+#frm_login p {
+    margin-bottom: 10px;
+}
+
+#frm_login input {
+    width: 50vw;
+    padding: 8px;
+    border: none;
+    border-radius: 50px;
+}
+
+#frm_login #btn_lgn {
+    width: 150px;
+    background-color: var(--cor04);
+    color: var(--cor03);
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+#frm_login #btn_lgn:hover {
+    font-weight: bolder;
+}
+
+
+
+.senha {
+    display: flex;
+    flex-direction: row;
+}
+
+#frm_login .senha input {
+ width: 23vw;
+ margin: 0 25px;
+}
+
+
+
+#bnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bnt #btn_conf{
+    margin: 0 auto;
+    background-color: var(--cor04);
+    padding: 10px 45px;
+    border: none;
+    border-radius: 50px;
+    color: var(--cor03);
+    margin-bottom: 50px;
+}
+
+#bnt #btn_conf:hover {
+    font-weight: bolder;
+}
+
+#checkbox {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+   
+
+    section {
+        text-align: justify;
+    }
+
+    section h1{
+        font-size: 35px;
+    }
+
+ section p {
+    font-size: 15px;
+ }
+
+ .senha {
+    flex-direction: column;
+ }
+
+ #frm_login {
+    margin: 0 auto;
+ }
+
+ #frm_login input {
+    width: 70vw;
+ }
+
+ #frm_login .senha input {
+    width: 70vw;
+ }
+
+ #checkbox {
+    width: 70vw;
+    margin: 30px auto;
+ }
+
+ #checkbox p {
+    font-size: 11px;
+ }
+    
+}
